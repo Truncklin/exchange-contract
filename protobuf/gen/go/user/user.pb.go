@@ -856,7 +856,7 @@ const file_user_user_proto_rawDesc = "" +
 	"\n" +
 	"DeleteUser\x12\x17.user.DeleteUserRequest\x1a\x18.user.DeleteUserResponse\x126\n" +
 	"\aDeposit\x12\x14.user.DepositRequest\x1a\x15.user.DepositResponse\x12H\n" +
-	"\rAuthorization\x12\x1a.user.AuthorizationRequest\x1a\x1b.user.AuthorizationResponseB9Z7github.com/Truncklin/exchange-contract/gen/go/user;userb\x06proto3"
+	"\rAuthorization\x12\x1a.user.AuthorizationRequest\x1a\x1b.user.AuthorizationResponseB\x12Z\x10gen/go/user;userb\x06proto3"
 
 var (
 	file_user_user_proto_rawDescOnce sync.Once

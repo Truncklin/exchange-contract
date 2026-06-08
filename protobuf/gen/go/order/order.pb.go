@@ -673,7 +673,7 @@ const file_order_order_proto_rawDesc = "" +
 	"\fOrderService\x12D\n" +
 	"\vCreateOrder\x12\x19.order.CreateOrderRequest\x1a\x1a.order.CreateOrderResponse\x12M\n" +
 	"\x0eGetOrderStatus\x12\x1c.order.GetOrderStatusRequest\x1a\x1d.order.GetOrderStatusResponse\x12V\n" +
-	"\x11StreamOrderUpdate\x12\x1f.order.StreamOrderUpdateRequest\x1a .order.StreamOrderUpdateResponseB;Z9github.com/Truncklin/exchange-contract/gen/go/order;orderb\x06proto3"
+	"\x11StreamOrderUpdate\x12\x1f.order.StreamOrderUpdateRequest\x1a .order.StreamOrderUpdateResponseB\x14Z\x12gen/go/order;orderb\x06proto3"
 
 var (
 	file_order_order_proto_rawDescOnce sync.Once
