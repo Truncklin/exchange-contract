@@ -74,7 +74,6 @@ message GetUserRequest{
     ];
 }
 message GetUserResponse {
-    string id = 1;
     string name = 2;
     string login = 3;
 

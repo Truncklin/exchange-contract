@@ -283,7 +283,6 @@ func (x *GetUserRequest) GetId() string {
 
 type GetUserResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Id            string                 `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
 	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
 	Login         string                 `protobuf:"bytes,3,opt,name=login,proto3" json:"login,omitempty"`
 	Balances      []*Balance             `protobuf:"bytes,4,rep,name=balances,proto3" json:"balances,omitempty"`
@@ -322,13 +321,6 @@ func (x *GetUserResponse) ProtoReflect() protoreflect.Message {
 // Deprecated: Use GetUserResponse.ProtoReflect.Descriptor instead.
 func (*GetUserResponse) Descriptor() ([]byte, []int) {
 	return file_user_user_proto_rawDescGZIP(), []int{4}
-}
-
-func (x *GetUserResponse) GetId() string {
-	if x != nil {
-		return x.Id
-	}
-	return ""
 }
 
 func (x *GetUserResponse) GetName() string {
@@ -806,9 +798,8 @@ const file_user_user_proto_rawDesc = "" +
 	"\n" +
 	"created_at\x18\x02 \x01(\v2\x1a.google.protobuf.TimestampR\tcreatedAt\"*\n" +
 	"\x0eGetUserRequest\x12\x18\n" +
-	"\x02id\x18\x01 \x01(\tB\b\xfaB\x05r\x03\xb0\x01\x01R\x02id\"\x8c\x02\n" +
-	"\x0fGetUserResponse\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
+	"\x02id\x18\x01 \x01(\tB\b\xfaB\x05r\x03\xb0\x01\x01R\x02id\"\xfc\x01\n" +
+	"\x0fGetUserResponse\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x14\n" +
 	"\x05login\x18\x03 \x01(\tR\x05login\x12)\n" +
 	"\bbalances\x18\x04 \x03(\v2\r.user.BalanceR\bbalances\x12\x1e\n" +
