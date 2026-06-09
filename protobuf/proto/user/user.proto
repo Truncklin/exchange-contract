@@ -107,7 +107,7 @@ message UpdateUserRequest{
     ];
 }
 message UpdateUserResponse{
-    string id = 1;
+    bool updated = 1;
     google.protobuf.Timestamp updated_at = 2;
 }
 

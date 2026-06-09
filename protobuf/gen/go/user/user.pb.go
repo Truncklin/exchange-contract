@@ -435,7 +435,7 @@ func (x *UpdateUserRequest) GetPassword() *wrapperspb.StringValue {
 
 type UpdateUserResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Id            string                 `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
+	Updated       bool                   `protobuf:"varint,1,opt,name=updated,proto3" json:"updated,omitempty"`
 	UpdatedAt     *timestamppb.Timestamp `protobuf:"bytes,2,opt,name=updated_at,json=updatedAt,proto3" json:"updated_at,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -471,11 +471,11 @@ func (*UpdateUserResponse) Descriptor() ([]byte, []int) {
 	return file_user_user_proto_rawDescGZIP(), []int{6}
 }
 
-func (x *UpdateUserResponse) GetId() string {
+func (x *UpdateUserResponse) GetUpdated() bool {
 	if x != nil {
-		return x.Id
+		return x.Updated
 	}
-	return ""
+	return false
 }
 
 func (x *UpdateUserResponse) GetUpdatedAt() *timestamppb.Timestamp {
@@ -813,9 +813,9 @@ const file_user_user_proto_rawDesc = "" +
 	"\x02id\x18\x01 \x01(\tB\b\xfaB\x05r\x03\xb0\x01\x01R\x02id\x12:\n" +
 	"\x04name\x18\x02 \x01(\v2\x1c.google.protobuf.StringValueB\b\xfaB\x05\x8a\x01\x02\x10\x00R\x04name\x12<\n" +
 	"\x05login\x18\x03 \x01(\v2\x1c.google.protobuf.StringValueB\b\xfaB\x05\x8a\x01\x02\x10\x00R\x05login\x12B\n" +
-	"\bpassword\x18\x04 \x01(\v2\x1c.google.protobuf.StringValueB\b\xfaB\x05\x8a\x01\x02\x10\x01R\bpassword\"_\n" +
-	"\x12UpdateUserResponse\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\tR\x02id\x129\n" +
+	"\bpassword\x18\x04 \x01(\v2\x1c.google.protobuf.StringValueB\b\xfaB\x05\x8a\x01\x02\x10\x01R\bpassword\"i\n" +
+	"\x12UpdateUserResponse\x12\x18\n" +
+	"\aupdated\x18\x01 \x01(\bR\aupdated\x129\n" +
 	"\n" +
 	"updated_at\x18\x02 \x01(\v2\x1a.google.protobuf.TimestampR\tupdatedAt\"-\n" +
 	"\x11DeleteUserRequest\x12\x18\n" +
